@@ -135,6 +135,25 @@ ul {list-style:none; padding:0; margin:0;}
   cursor:pointer;
 }
 
+.categories-menu {
+
+}
+
+.search-category-drop-menu  {
+  display:none;
+  position:absolute;
+  padding-top:12px;
+  z-index: 50;
+}
+
+.categories-button:focus ~ .search-category-drop-menu,
+.categories-button:active ~ .search-category-drop-menu,
+.search-category-drop-menu:hover
+{
+  display:block;
+}
+
+
 .header-user-buttons {
   float:left;
   padding:45px 85px 0 0px;
@@ -499,7 +518,7 @@ ul {list-style:none; padding:0; margin:0;}
 
 
 .slider-blocks article  {
-  padding:0 0px 0 30px;
+  padding:0 0px 0 45px;
 }
 
 
@@ -512,7 +531,6 @@ ul {list-style:none; padding:0; margin:0;}
 
 .slider-settings {
     transition: all 0.9s;
-    width:300%;
     overflow: hidden;
 }
 
@@ -623,6 +641,27 @@ label, a{
   margin-left:-55px;
 }
 
+.deals-slider-item {
+  text-align:center;
+}
+
+.deals-item-name a {
+  font-size:24px;
+  color:#333;
+}
+
+.deals-item-name p {
+  font-size:32px;
+  color:#007aff;
+}
+
+.deals-item-name span {
+  display:inline-block;
+  color:#ccc;
+  font-size:28px;
+  padding-left:10px;
+}
+
 .right-catalog-slider {
   padding-left:50px;
 }
@@ -659,4 +698,57 @@ label, a{
 
 .catalog-item-name span {
   display:block;
+}
+
+.best-seller-slider {
+  overflow: hidden;
+}
+
+.top-slider h3 {
+  font-size:32px;
+  font-weight:bold;
+  padding-left:100px;
+}
+
+#btn01:checked~ .slider-settings .slider-blocks {
+  transform: translate(0);
+}
+
+#btn02:checked~ .slider-settings .slider-blocks {
+  transform: translate(-101%);
+}
+
+#btn03:checked~ .slider-settings .slider-blocks {
+  transform: translate(-202%);
+}
+
+#btn01:checked ~ .controls-arrows label:nth-child(3), 
+#btn02:checked ~ .controls-arrows label:nth-child(1),
+#btn03:checked ~ .controls-arrows label:nth-child(2){
+  background: url(../images/deals-left-arrow.png) no-repeat; 
+  display: block;
+  height: 30px;
+  width: 30px;
+  float:left;
+  margin-right:20px;
+}
+
+
+#btn01:checked ~ .controls-arrows label:nth-child(2), 
+#btn02:checked ~ .controls-arrows label:nth-child(3),
+#btn03:checked ~ .controls-arrows label:nth-child(1){
+  background: url(../images/deals-right-arrow.png) no-repeat; 
+  display: block;
+  height: 30px;
+  width: 30px;
+  float:right;
+  margin-left:20px;
+}
+
+.radio-controls {
+  display:none;
+}
+
+.top-slider {
+  display: flex;
 }
