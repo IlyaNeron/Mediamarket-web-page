@@ -702,6 +702,8 @@ label, a{
 
 .best-seller-slider {
   overflow: hidden;
+  position: relative;
+  padding-top:150px;
 }
 
 .top-slider h3 {
@@ -730,7 +732,6 @@ label, a{
   height: 30px;
   width: 30px;
   float:left;
-  margin-right:20px;
 }
 
 
@@ -742,7 +743,7 @@ label, a{
   height: 30px;
   width: 30px;
   float:right;
-  margin-left:20px;
+  margin-left:10px;
 }
 
 .radio-controls {
@@ -751,4 +752,15 @@ label, a{
 
 .top-slider {
   display: flex;
+}
+
+.top-slider span {
+  font-weight:normal;
+}
+
+.best-slider-controls {
+  position: absolute;
+  right:0;
+  margin:0;
+  padding:5px 100px;
 }
