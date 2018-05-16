@@ -51,15 +51,14 @@
                     </div>
                         <div class="search">
                             <input type="search" name="search" placeholder="Search for products..." class="input" />
-                                <div class="categories-menu">
-                                    <ul class="search-category-drop">
-                                        <li tabindex="1" class="categories-button"><span>All Categories</span>
-                                            <ul class="search-category-drop-menu">
-                                                <li>Mobile</li>
-                                                <li>Servers</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                <div class="select-wrapper">
+                                    <div class="select-arrow-2"></div>
+                                        <select>
+                                            <option>All Categories</option>
+                                            <option>Mobile</option>
+                                            <option>Pc</option>
+                                            <option>Gadgets</option>
+                                        </select>
                                 </div>
                                 <button type="submit">
                                     <img alt="Search" src="images/search-icon.png">
@@ -111,9 +110,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <div>
                                 <a class="after-elements-arrow" href="#">HOME</a>
-                            </div>
                             </li>
                             <li>
                                 <a class="after-elements-arrow" href="#">SHOP</a>
@@ -238,7 +235,7 @@
                                 </div>
                         <div class="slider-controls-block">
                             <h3>2017's <span>Best Selling Products</span></h3>
-                                <div class="rune"><a href="#">FULL CATALOG</a></div>
+                                <div class="catalog-arrow-button"><a href="#">FULL CATALOG</a></div>
                         </div>
                         <div class="slider-settings">
                             <div class="slider-blocks">
@@ -372,26 +369,27 @@
             <section class="section">
                 <div class="container">
                     <div class="shares-block">
-                    <div class="main-deals-block">
-                        <div class="deals-time-slider">
-                            <div class="slider-control-item">
-                                <h3>Deals <span>of the month</span></h3>
-                            </div>
-                            <div class="deals-slider-item">
-                                 <div class="slider-item">
-                                     <a href="#">
-                                         <img alt="Fsf" src="images/right-slider-catalog-image.png">
-                                     </a>
-                                 </div>
-                                 <div class="deals-item-name">
-                                     <p>$169.95<span>$269.00</span></p>
-                                     <a href="#">ecobee3 lite Smart Thermostat</a>
-                                 </div>
+                        <div class="main-deals-block">
+                            <div class="deals-time-slider">
+                                <div class="slider-control-item">
+                                    <h3>Deals<span>of the month</span></h3>
+                                </div>
+                                <div class="deals-slider-item">
+                                     <div class="slider-item">
+                                         <a href="#">
+                                             <img class="deals-slider-image" alt="Fsf" src="images/ecobee3.png">
+                                         </a>
+                                         <div class="deals-item-indicate">SAVE $99.00</div>
+                                     </div>
+                                     <div class="deals-item-name">
+                                         <p>$169.95<span>$269.00</span></p>
+                                         <a href="#">ecobee3 lite Smart Thermostat</a>
+                                     </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     <div class="right-catalog-slider">
-                        <ul>
+                        <ul class="top-slider-nav">
                             <li>
                                 <a href="#">New Arrivals</a>
                             </li>
@@ -413,79 +411,99 @@
                         <div class="catalog-slider-items">
                             <ul>
                                 <li>
-                                    <div>
+                                    <div class="slider-content-block">
                                         <div class="slider-item">
                                             <a href="#">
                                                 <img alt="Fsf" src="images/right-slider-catalog-image.png">
                                             </a>
                                         </div>
                                         <div class="catalog-item-name">
-                                            <p>$299.95</p>
+                                            <a class="hover-text">ADD TO CART</a>
+                                            <p>
+                                                <span class="static-text">$299.95</span>
+                                            </p>
                                             <a href="#">Beats Solo3 Wireless <div>On-Ear Headphones</div></a>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="">
+                                    <div class="slider-content-block">
                                         <div class="slider-item">
                                             <a href="#">
                                                 <img alt="Fsf" src="images/right-slider-catalog-image.png">
                                             </a>
                                         </div>
                                         <div class="catalog-item-name">
-                                            <p>$2 989.95</p>
+                                            <a class="hover-text">ADD TO CART</a>
+                                            <p>
+                                                <span class="static-text">$2 989.95</span>
+                                            </p>
                                             <a href="#">Devialet Gols Phantom<div>Wireless Speaker</div></a>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div>
+                                    <div class="slider-content-block">
                                         <div class="slider-item">
                                             <a href="#">
                                                 <img alt="Fsf" src="images/right-slider-catalog-image.png">
                                             </a>
                                         </div>
                                         <div class="catalog-item-name">
-                                            <p>$369.00</p>
+                                            <a class="hover-text">ADD TO CART</a>
+                                            <p>
+                                            <span class="static-text">$369.00</span>
+                                            </p>
                                             <a href="#">Apple Watch nike+ <div>With Sport band</div></a>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div>
+                                    <div class="slider-content-block">
                                         <div class="slider-item">
                                             <a href="#">
                                                 <img alt="Fsf" src="images/right-slider-catalog-image.png">
+                                                <span class="yellow-item-indicator">-35%</span>
                                             </a>
                                         </div>
                                         <div class="catalog-item-name">
-                                            <p>$109.95</p>
+                                            <a class="hover-text">ADD TO CART</a>
+                                            <p>
+                                                <span class="static-text">$109.95</span>
+                                            </p>
                                             <a href="#">Parrot Mambo <div>MiniDrone</div></a>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div>
+                                    <div class="slider-content-block">
                                         <div class="slider-item">
                                             <a href="#">
                                                 <img alt="Fsf" src="images/right-slider-catalog-image.png">
                                             </a>
                                         </div>
                                         <div class="catalog-item-name">
-                                            <p>$129.95</p>
+                                            <a class="hover-text">ADD TO CART</a>
+                                            <p>
+                                                <span class="static-text">$129.95</span>
+                                            </p>
                                             <a href="#">Base SoundLink Color<div>Bluetooth Speaker II</div></a>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div>
+                                    <div class="slider-content-block">
                                         <div class="slider-item">
                                             <a href="#">
                                                 <img alt="Fsf" src="images/right-slider-catalog-image.png">
                                             </a>
+                                            <span class="yellow-item-indicator red-item-indicator ">HOT</span>
                                         </div>
                                         <div class="catalog-item-name">
-                                            <p>$99.95</p>
+                                            <a class="hover-text">ADD TO CART</a>
+                                            <p>
+                                                <span class="static-text">$99.95</span>
+                                            </p>
                                             <a href="#">Beats Solo3 Wireless <div>On-Ear Headphones</div></a>
                                         </div>
                                     </div>
@@ -513,14 +531,17 @@
                        <div class="slider-settings best-slider-settings">
                             <div class="slider-blocks">
                                 <article>
-                                        <div class="best-selling-images">
+                                    <div class="best-selling-images">
                                             <a href="#">
                                                 <img alt="Fsf" src="images/audio-image.png">
                                             </a>
                                         </div>
                                         <div class="item-info-block">
-                                            <p>$499.99</p>
-                                            <a href="#">Hover Camera Passport<div>Personal Photographer</div></a>
+                                            <a class="hover-text">ADD TO CART</a>
+                                            <p>
+                                                <span class="static-text">$299.95</span>
+                                            </p>
+                                            <a href="#">Hover Camera Passport Personal Photographer</a>
                                         </div>
                                     </article>
                                     <article>
@@ -528,9 +549,14 @@
                                             <a href="#">
                                                 <img alt="Fsf" src="images/premium-tv-image.png">
                                             </a>
+                                            <span class="yellow-item-indicator green-item-indicator">SALE</span>
                                         </div>
                                         <div class="item-info-block">
-                                            <p>$295<span class="corrected-price">$399.95</span></p>
+                                            <a class="hover-text">ADD TO CART</a>
+                                            <p>
+                                                <span class="static-text">$295</span>
+                                                <span class="corrected-price static-text">$399.95</span>
+                                            </p>
                                             <a href="#">Best SoundLink Revolve+<div>Bluetooth Speaker</div></a>
                                         </div>
                                     </article>
@@ -541,7 +567,10 @@
                                             </a>
                                         </div>
                                         <div class="item-info-block">
-                                            <p>$299.95</p>
+                                            <a class="hover-text">ADD TO CART</a>
+                                            <p>
+                                                <span class="static-text">$299.95</span>
+                                            </p>
                                             <a href="#">GoPro HERO5<div>Session Camera</div></a>
                                         </div>
                                     </article>
@@ -550,6 +579,7 @@
                                             <a href="#">
                                                 <img alt="Fsf" src="images/tablets-image.png">
                                             </a>
+                                            <span class="yellow-item-indicator skyblue-item-indicator">NEW</span>
                                         </div>
                                         <div class="item-info-block">
                                             <a class="hover-text">ADD TO CART</a>
@@ -566,7 +596,10 @@
                                             </a>
                                         </div>
                                         <div class="item-info-block">
-                                            <p>$109.95</p>
+                                            <a class="hover-text">ADD TO CART</a>
+                                            <p>
+                                                <span class="static-text">$299.95</span>
+                                            </p>
                                             <a href="#">Beats Black<div>Earphones</div></a>
                                         </div>
                                     </article>
@@ -577,7 +610,10 @@
                                             </a>
                                         </div>
                                         <div class="item-info-block">
-                                            <p>$229.95</p>
+                                            <a class="hover-text">ADD TO CART</a>
+                                            <p>
+                                                <span class="static-text">$299.95</span>
+                                            </p>
                                             <a href="#">August Smart Lock<div>Homekit Enabled</div></a>
                                         </div>
                                     </article>
@@ -656,6 +692,11 @@
                                   </div>
                                 </div>
                     </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+
                 </div>
             </section>
          </main>
