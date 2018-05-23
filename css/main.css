@@ -900,6 +900,7 @@ label, a{
 
 .right-catalog-slider {
   width: calc(95.5% - 550px);
+  position: relative;
 }
 
 .right-catalog-slider ul > li > div:hover {
@@ -972,6 +973,40 @@ label, a{
 
 .catalog-slider-items {
   width:33.333%;
+}
+
+#first-tab:checked ~ .tabs-arrows label:nth-child(4), 
+#second-tab:checked ~ .tabs-arrows label:nth-child(1),
+#third-tab:checked ~ .tabs-arrows label:nth-child(2),
+#fourth-tab:checked ~ .tabs-arrows label:nth-child(3){
+  background: url(../images/deals-left-arrow.png) no-repeat; 
+  display: block;
+  height: 30px;
+  width: 30px;
+  float:left;
+}
+
+
+#first-tab:checked ~ .tabs-arrows label:nth-child(2), 
+#second-tab:checked ~ .tabs-arrows label:nth-child(3),
+#third-tab:checked ~ .tabs-arrows label:nth-child(4),
+#fourth-tab:checked ~ .tabs-arrows label:nth-child(1){
+  background: url(../images/deals-right-arrow.png) no-repeat; 
+  display: block;
+  height: 30px;
+  width: 30px;
+  float:right;
+  margin-left:10px;
+}
+
+.tabs-arrows {
+  position: absolute;
+  right:0;
+  top:4%;
+}
+
+.radio-test {
+  display: none;
 }
 
 #btn001:checked~.right-slider-inner .right-slides {
@@ -1445,54 +1480,50 @@ label, a{
 
 
 
-
-
-
-.radio-test {
-  display: none;
-}
-
-/*
-
-#test-1:checked ~ .labels #label-test-1 {
-  color:#ff3b30;
+#first-todays-tab:checked ~ .todays-labels #first-todays-label {
+  color:#333;
   font-weight:bold;
 }
 
-#test-2:checked ~ .labels #label-test-2 {
-  color:#ff3b30;
+#second-todays-tab:checked ~ .todays-labels #second-todays-label {
+  color:#333;
   font-weight:bold;
 }
 
-#test-3:checked ~ .labels #label-test-3 {
-  color:#ff3b30;
+#third-todays-tab:checked ~ .todays-labels #third-todays-label {
+  color:#333;
   font-weight:bold;
 }
 
-#test-4:checked ~ .labels #label-test-4 {
-  color:#ff3b30;
+#fourth-todays-tab:checked ~ .todays-labels #fourth-todays-label {
+  color:#333;
   font-weight:bold;
 }
 
-.content {
-  display: none;
-}
-
-#test-1:checked ~ #content-test-1 {
+#first-todays-tab:checked ~ #first-todays-tabs-content {
   display: block;
 }
 
-#test-2:checked ~ #content-test-2 {
+#second-todays-tab:checked ~ #second-todays-tabs-content {
   display: block;
 }
 
-.labels {
+#third-todays-tab:checked ~ #third-todays-tabs-content {
+  display: block;
+}
+
+#fourth-todays-tab:checked ~ #fourth-todays-tabs-content {
+  display: block;
+}
+
+.todays-labels {
   display: flex;
-  justify-content: start;
-  padding-left:;
+  justify-content: center;
 }
 
-.label {
-  font-size:28px;
-
+.todays-label {
+  font-size:24px;
+  padding:20px 30px;
 }
+
+
