@@ -685,6 +685,8 @@ h3 {
 
 .secect-form {
   width:100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .secect-form select {
@@ -754,7 +756,6 @@ h3 {
 
 .second-button {
   display: flex;
-
 }
 
 .second-button a:first-child{
@@ -821,6 +822,7 @@ h3 {
   width:30%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .select-catalog_1 {
@@ -971,6 +973,7 @@ input[type=checkbox] + label {
   margin:0 100px;
   border-top: 5px solid #f5f5f5;
   background: #f5f5f5;
+  padding-bottom:40px;
 }
 
 #second-tabs-block_1:checked ~ #second-tab-content_1 {
@@ -979,6 +982,7 @@ input[type=checkbox] + label {
   margin:0 100px;
   border-top: 5px solid #f5f5f5;
   background: #f5f5f5;
+  padding-bottom:40px;
 }
 
 #third-tabs-block_1:checked ~ #third-tab-content_1 {
@@ -987,6 +991,7 @@ input[type=checkbox] + label {
   margin:0 100px;
   border-top: 5px solid #f5f5f5;
   background: #f5f5f5;
+  padding-bottom:40px;
 }
 
 #fourth-tabs-block_1:checked ~ #fourth-tab-content_1 {
@@ -995,6 +1000,7 @@ input[type=checkbox] + label {
   margin:0 100px;
   border-top: 5px solid #f5f5f5;
   background: #f5f5f5;
+  padding-bottom:40px;
 }
 
 .tabs-content-wrapper {
@@ -1070,10 +1076,6 @@ input[type=checkbox] + label {
   line-height: 1.2
 }
 
-.section_4 {
-  background: #f5f5f5;
-}
-
 .right-tabs-block {
   display: flex;
   position: relative;
@@ -1140,10 +1142,69 @@ input[type=checkbox] + label {
   
 }
 
+.bottom-item-tabs-block {
+  display: flex;
+  margin:100px 200px;
+  background: #333;
+}
 
+.bottom-item-image {
+  width:50%;
+}
 
+.bottom-item-image img {
+  width:100%;
+}
 
+.bottom-item-content {
+  width:50%;
+  padding: 100px 0 100px;
+}
 
+.stars-block a{
+  color:#fff;
+}
+
+.caption-style_9 {
+  font-size:36px;
+  color:#fff;
+}
+
+.bottom-item-content p{
+  font-size:18px;
+  color:#fff;
+  opacity:0.5;
+  padding: 0 30px 0 0;
+}
+
+.bottom-item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-block_1 , .info-block_2 {
+  display: flex;
+}
+
+.caption-style_10 {
+  color:#fff;
+  font-size:18px;
+}
+
+.info-block-image {
+  display: flex;
+  width:13%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-block-image img {
+  width:100%;
+}
+
+.info-block-text {
+  padding: 30px 30px 0 30px;
+}
 
 
 .slider-wrapper {
