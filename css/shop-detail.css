@@ -1315,8 +1315,8 @@ input[type=checkbox] + label {
 
 .bottom-item-image img {
     position: absolute;
-    top: 55%;
-    left: 50%;
+    top: 53%;
+    left: 52%;
     width:76%;
     transform: translate(-48%, -57%) rotate(51deg);
 }
@@ -1324,7 +1324,7 @@ input[type=checkbox] + label {
 
 .bottom-item-content {
   width:50%;
-  padding: 70px 15px 113px;
+  padding: 70px 15px 83px;
 }
 
 .stars-block a{
@@ -1334,14 +1334,15 @@ input[type=checkbox] + label {
 .caption-style_9 {
   font-size:36px;
   color:#fff;
-  margin: 10px 0 7px;
+  margin: 20px 0 7px;
+  line-height: 46px;
 }
 
 .bottom-item-content p{
   font-size:18px;
   color:#fff;
   opacity:0.5;
-  padding: 0 30px 0 0;
+  padding: 7px 30px 0 0;
 }
 
 .bottom-item-info {
@@ -1366,16 +1367,19 @@ input[type=checkbox] + label {
 }
 
 .info-block-image img {
-  width:100%;
+
 }
 
 .info-block-text {
-  padding: 30px 30px 0 54px;
+  padding: 3px 40px 0 55px;
 }
 
+.info-block-text_2 {
+  padding: 20px 40px 0 55px;
+}
 
 .slider-wrapper {
-  padding:50px 75px 30px;
+  padding:50px 75px 40px;
 }
 
 .caption-block_7 {
@@ -1452,6 +1456,13 @@ input[type=checkbox] + label {
   font-size:22px;
 }
 
+.old-price {
+  color:#bbb;
+  font-size:22px;
+  text-decoration: line-through;
+  padding-left:15px;
+}
+
 .green-indicator_2 {
   position: absolute;
   right:0;
@@ -1460,8 +1471,8 @@ input[type=checkbox] + label {
 
 .blue-indicator {
   position: absolute;
-  right:0;
-  top:0;
+  right: 6%;
+  top: 5.5%;
   background: #5ac8fa;
 
 }
@@ -1470,12 +1481,12 @@ input[type=checkbox] + label {
   margin: -20px -20px;
 }
 .slider-catalog-items_1 li {
-  padding: 10px 0 0px 0;
   text-align: center;
   cursor:pointer;
+  margin:58px 0 0 0;
 }
 .slider-catalog-item {
-  padding: 20px 20px;
+  padding: 15px 20px;
     border-radius: 10px;
     border: 4px solid transparent;
     transition: .3s;
@@ -1513,12 +1524,25 @@ input[type=checkbox] + label {
   display: none;
 }
 
+.slider-catalog-item:hover .old-price {
+  display: none;
+}
+
 .slider-catalog-item:hover .hover-user-items_2 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  left:0;
-  top:0;
+  left:7%;
+  top:6%;
+}
+
+.catalog-images_2 {
+  width:80%;
+  margin:0 auto;
+}
+
+.catalog-images_2 img {
+  width:100%;
 }
 
 .hover-user-items_2 {
@@ -1528,18 +1552,18 @@ input[type=checkbox] + label {
 .hover-user-items_2 a:first-child {
   background: #eee;
   border-radius: 50%;
-  padding: 15px 12px 8px 12px;
+  padding: 18px 15px 10px 15px;
 }
 
 .hover-user-items_2 a:last-child {
   background: #eee;
   border-radius: 50%;
-  padding: 15px 12px 15px 12px;
+  padding: 13px 11px 13px 10px;
   margin-top:10px;
 }
 
 .hover-user-items_2 img {
-  width:80%;
+  width:65%;
 }
 
 #btn1:checked ~ .switch-controls_1 label:nth-child(3), 
