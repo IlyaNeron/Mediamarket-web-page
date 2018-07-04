@@ -743,6 +743,17 @@ h3 {
   display: flex;
   justify-content: space-between;
   padding-left: 5px;
+  position: relative;
+}
+
+.select-wrapper_2 {
+  border-radius: 3px;
+  position: absolute;
+  left:19%;
+  top: 0;
+  bottom:0;
+  width:40px;
+  border-left:3px solid #ccc;
 }
 
 .secect-form select {
@@ -759,7 +770,11 @@ h3 {
 
 .select-block_1 {
   width:25%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+
 
 .select-block_2 {
   width:34%;
@@ -783,18 +798,43 @@ h3 {
   -moz-appearance: none;       /* remove arrow FF     */
 }
 
-.select-arrow {
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  right: 6px;
-  top: 14px;
+.select-wrapper_2 select {
+  padding: 0 30px 0 0px;
+  background: transparent;
+  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size:20px;
+  font-weight:bold;
+}
+.select-wrapper_2 select::-ms-expand{
+    display: none;
 }
 
-.select-arrow::after {
+.select-arrow-3 {
+  position: absolute;
+  right: 45%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.select-arrow-3:before {
   content: '';
   position: absolute;
-  background: url('images/arrow-down.png')
+  top: -10px;
+  border: 5px solid transparent;
+  border-bottom-color: #333;
+  border-top: 0;
+}
+
+.select-arrow-3:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  border: 5px solid transparent;
+  border-top-color: #333;
+  border-bottom: 0;
 }
 
 .user-buttons {
@@ -1662,7 +1702,7 @@ input[type=checkbox] + label {
 
 .catalog-item-description_6 {
   width:100%;
-  padding: 15.5px 0;
+  padding: 16.5px 0;
   text-align:left;
 }
 
@@ -1712,7 +1752,7 @@ input[type=checkbox] + label {
 }
 
 .catalog-services {
-  padding:117px 75px 35px;
+  padding:114px 75px 35px;
   display: flex;
   justify-content: center;
 }
@@ -1728,8 +1768,8 @@ input[type=checkbox] + label {
   width:100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  padding: 10px 25px 0px 0px;
+  text-align:left;
 }
 
 .catalog-item-description_7 h3 {
@@ -1744,7 +1784,7 @@ input[type=checkbox] + label {
 }
 
 .footer-list {
-  padding:44px 75px;
+  padding:43px 75px;
   display: flex;
   justify-content: space-between;
 }
