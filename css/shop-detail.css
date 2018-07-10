@@ -129,18 +129,23 @@ h3 {
 .nav-menu-items {
   padding-left: 70px;
   margin: 0 -21px;
+  display: flex;
+  width:100%;
+  justify-content: space-between;
 }
 
 .nav-menu-items li {
-  display: inline-block;
   padding: 0 7px 0 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nav-menu {
   width:100%;
   display: flex;
   justify-content: space-between;
-  padding: 44px 45px 0px 0;
+  padding: 25px 45px 0px 0;
   position: relative;
 }
 
@@ -174,6 +179,7 @@ h3 {
   background: #eee;
   width:500px;
   right:0;
+  height:500px;
 }
 
 .right-drop-menu-icon {
@@ -286,26 +292,88 @@ h3 {
 {
   display:block;
   background: #eee;
-  width:500px;
+  z-index:100;
+  animation: menu 0.5s ease-in-out;
 }
+
+  @keyframes menu {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 0.0;
+    }
+    60% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    80% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
 
 .button-sub-menu {
   display: none;
   position: absolute;
   left: 0;
+  top:100%;
+  box-shadow: 10px 5px 20px 0px rgba(0,0,0,0.5);
+  width:370px;
+  border-radius: 5px;
+}
+
+.button-sub-menu li {
+  padding:20px;
+  position: relative;
+  border-bottom:2px solid transparent;
+  border-top:2px solid transparent;
+}
+
+.button-sub-menu li::after {
+  content: "";
+  background: url('../images/arrow-down.png') no-repeat;
+  position: absolute;
+  right:0;
+  top:30%;
+  transform: translateY(-50%);
+  width:20px;
+  height: 20px;
+  transform: rotate(270deg);
+}
+
+.button-sub-menu li:hover {
+  border-bottom:2px solid #ccc;
+  border-top:2px solid #ccc;
+}
+
+.button-sub-menu li > a {
+  color:#333;
+  font-size:22px;
 }
 
 .button-style {
   font-size:20px;
   color:#fff;
+  padding:20px 0 20px 20px;
+  display: flex;
 }
 
 .drop-button-block {
-  padding: 20px 0 0 30px;
   position: relative;
   background: #007aff;
   border-radius:5px;
   width:370px;
+  cursor: pointer;
+}
+
+.drop-button-block:hover {
+
 }
 
 .button-style::after {
@@ -1034,12 +1102,15 @@ input[type=checkbox], input[type=radio] {display: none;}
 
 .lateral-select-catalog-block p {
   font-size:20px;
+
 }
 
 .lateral-select-catalog-block {
   display: flex;
   width:50%;
+  align-self: flex-end;
   justify-content: flex-end;
+  padding-bottom:78px;
 }
 
 .lateral-button-block a {
@@ -1054,11 +1125,12 @@ input[type=checkbox], input[type=radio] {display: none;}
 }
 
 .block-info {
-  padding: 180px 5px 0 0;
+  padding: 0px 5px 0 0;
 }
 
 .lateral-button-block  {
-  padding: 193px 0 0 16px;
+  padding: 0 0 0 16px;
+  align-self: center;
 }
 
 .caption-block_3 {
@@ -1293,6 +1365,8 @@ input[type=checkbox], input[type=radio] {display: none;}
 
 .tip-block_1 {
   display: none;
+  animation: 0.7s menu;
+  z-index: 10;
 }
 
 .button-wrapper1:hover .tip-block_1 {
@@ -1342,6 +1416,7 @@ input[type=checkbox], input[type=radio] {display: none;}
   border-top-color: #727272;
   left: calc(50% - 30px);
   position: absolute;
+  bottom:-18px;
 }
 
 .bottom-item-tabs-block {
@@ -2319,31 +2394,37 @@ input[type=checkbox], input[type=radio] {display: none;}
   }
    #user-button_1:checked~.user-sub-menu {
     position: absolute;
-    background: #f5f5f5;
+    background: #fff;
     animation: sub-menu 0.7s ease;
-    display: block;
+    display: flex;
+    justify-content: center;
     z-index:20;
     width:300px;
     height:200px;
     border-radius: 8px;
     right: 3%;
     top:80%;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    text-align: center;
   }
   #user-button_2:checked~.user-sub-menu_2 {
     position: absolute;
-    background: #f5f5f5;
+    background: #fff;
     animation: sub-menu 0.7s ease;
-    display: block;
     z-index:20;
     width:300px;
     height:200px;
     border-radius: 8px;
     right: 3%;
     top:80%;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
   #user-button_3:checked~.user-sub-menu_3 {
     position: absolute;
-    background: #f5f5f5;
+    background: #fff;
     animation: sub-menu 0.7s ease;
     display: block;
     z-index:20;
@@ -2352,17 +2433,22 @@ input[type=checkbox], input[type=radio] {display: none;}
     border-radius: 8px;
     right: 3%;
     top:80%;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
      #user-button_2:checked~.user-sub-menu_2 {
     position: absolute;
-    background: #f5f5f5;
+    background: #fff;
     animation: sub-menu 0.7s ease;
-    display: block;
+    display: flex;
     z-index:20;
+    justify-content: center;
   }
      #user-button_3:checked~.user-sub-menu_3 {
     position: absolute;
-    background: #f5f5f5;
+    background: #fff;
     animation: sub-menu 0.7s ease;
     display: block;
     z-index:20;
@@ -2716,5 +2802,194 @@ input[type=checkbox], input[type=radio] {display: none;}
 }
 
 @media only screen and (min-width: 1400px) and (max-width:1920px) {
+  .drop-button-block {
+    margin-right:57px;
+  }
+  .select-wrapper {
+    right:12%;
+  }
+  .second-button {
+    margin: 0;
+  }
+  .third-button {
+    margin: 0;
+  }
+  .second-button a:last-child {
+    font-size:18px;
+  }
+  .third-button a:last-child {
+    font-size:18px;
+  }
+  .images-slider-tab-content {
+    margin: 0;
+    width:90%;
+  }
+  .images-slider-labels {
+    margin-right:-12%;
+    z-index: 10
+  }
+  .lateral-block-item-info {
+    width:55%;
+  }
+  .button-style {
+    font-size:18px;
+  }
+  .search input {
+    font-size: 18px;
+  }
+  .select-wrapper select {
+    font-size: 18px;
+  }
+  .nav-menu-items li > a {
+    font-size:20px;
+  }
+  .nav-menu-items {
+    width: 95%;
+  }
+  .select-catalog_1 {
+    width: 85%;
+  }
+  .lateral-select-catalog-block {
+    width: 50%;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-self: inherit;
+    padding: 0;
 
+  }
+  .block-info {
+    padding: 0;
+    align-self: center;
+  }
+  .lateral-button-block {
+    align-self: center;
+    padding: 0;
+  }
+  .catalog-select-wrapper {
+    padding:15px 75px;
+  }
+  .description-tab-block {
+    width: 55%;
+    padding:64px 0 0 98px;
+  }
+  .old-price {
+    font-size:18px;
+  }
+  .static-text {
+    font-size:18px;
+  }
+  .catalog-item-name a {
+    font-size: 18px;
+  }
+  .catalog-item-name_3 {
+    
+  }
+  .stars-block_2 {
+    
+  }
+  .catalog-item-images_3 {
+    width:60%;
+  }
+  .categories-catalog-wrapper {
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+  .first-catalog-block {
+    width: 30%;
+  }
+  .catalog-item-description_6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .categories-catalog-caption {
+    font-size: 28px;
+  }
+  .catalog-item-name_4 {
+    font-size: 18px;
+  }
+  .stars-block_2 {
+    font-size: 18px;
+  }
+  .item-price_4 {
+  font-size:18px;
+  }
+  .fourth-catalog-block {
+    margin:0;
+  }
+  .catalog-item-images_3 {
+    width:75%;
+  }
+  .header-nav a {
+    font-size:18px;
+  }
+  .languege-drop-menu {
+    font-size:18px;
+  }
+  .drop-button-block {
+    
+  }
+  .search input {
+    padding: 10px 0 10px 20px;
+  }
+  .user-indicators-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .user-indicator-items li {
+    padding:10px 20px;
+  }
+  .bottom-item-tabs-block {
+    margin:110px 0;
+  }
+  .info-block-image {
+    width: 13%;
+  }
+  .catalog-services-items li {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0
+  }
+  .catalog-item-images_6 {
+    text-align: center;
+    width: 100%;
+  }
+  .catalog-item-description_7{
+    padding: 0;
+    text-align: center;
+  }
+  .tabs-labels_1 {
+    padding:54px 75px 54px 0;
+  }
+  .caption-block_3 {
+    padding: 45px 0 45px 74px;
+  }
+  .left-info-block {
+    width:17%;
+  }
+  .right-nav-block-list {
+    padding:10px 0 0 0;
+  }
+  .list-block_1 {
+    padding:0 20px;
+  }
+  .bottom-item-image img {
+    width: 68%;
+  }
+  .middle-description-block h3 {
+    font-size:26px;
+  }
+  .item-price {
+    font-size: 24px;
+  }
+  .old-item-price {
+    font-size:24px;
+  }
+  .stars-block a {
+    color:#333;
+  }
+  .price-block p {
+    font-size: 18px;
+  }
 }
