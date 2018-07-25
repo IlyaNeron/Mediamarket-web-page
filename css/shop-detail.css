@@ -3232,7 +3232,6 @@ input[type=radio] {
   }
   .select-wrapper {
     right: 12%;
-    display: none;
   }
   .search button {
     padding: 16px 20px;
@@ -3484,7 +3483,6 @@ input[type=radio] {
   }
   .select-wrapper {
     right: 16%;
-    display: none;
   }
   .search {
     width: 55%;
@@ -3845,7 +3843,6 @@ input[type=radio] {
   }
   .select-wrapper {
     right: 16%;
-    display: none;
   }
   .search {
     width: 55%;
