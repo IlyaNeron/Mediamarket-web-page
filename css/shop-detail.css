@@ -322,7 +322,7 @@ select {
 }
 
 .bottom-nav-block {
-  padding: 28px 75px 21px 75px;
+  padding: 28px 75px 23px 75px;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -440,7 +440,7 @@ select {
 .search input {
   border: 2px solid #007aff;
   border-radius: 3px;
-  padding: 19px 0px 19px 20px;
+  padding: 18px 0px 18px 20px;
   width: 100%;
   font-size: 20px;
   position: relative;
@@ -1472,6 +1472,7 @@ input[type=radio] {
 
 .tabs-content-wrapper {
   display: flex;
+  padding:0 0 49px 0;
 }
 
 .description-tab-block {
@@ -1722,7 +1723,7 @@ input[type=radio] {
 
 .bottom-item-content {
   width: 50%;
-  padding: 70px 15px 83px;
+  padding: 70px 15px 82px;
 }
 
 .stars-block_3 a {
@@ -1760,21 +1761,29 @@ input[type=radio] {
 
 .info-block-image {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   max-width: 45px;
   width: 100%;
   flex: 0 0 auto;
+  flex-direction: column;
+  padding:10px 0 0 0;
 }
 
 .info-block-image img {}
 
 .info-block-text {
-  padding: 3px 40px 0 55px;
+  padding: 0px 40px 0 55px;
 }
 
 .info-block-text_2 {
-  padding: 20px 40px 0 55px;
+  padding: 0px 40px 0 55px;
+}
+
+.info-block_1 {
+  padding:5px 0 0 0;
+}
+
+.info-block_2 {
+  padding:21px 0 0 0;
 }
 
 .slider-wrapper {
@@ -2035,7 +2044,7 @@ input[type=radio] {
 .catalog-items-block li {
   display: flex;
   width: 100%;
-  border-top: 1px solid #ccc;
+  border-top: 2px solid #ccc;
 }
 
 .catalog-item-name_4 {
@@ -2075,7 +2084,7 @@ input[type=radio] {
 
 .catalog-item-description_6 {
   width: 100%;
-  padding: 12.5px 0 24px;
+  padding: 12.5px 0 22px;
   text-align: left;
 }
 
@@ -2160,7 +2169,7 @@ input[type=radio] {
 }
 
 .footer-list {
-  padding: 43px 75px 60px;
+  padding: 46px 75px 60px;
   display: flex;
   justify-content: space-between;
 }
@@ -2171,7 +2180,7 @@ input[type=radio] {
 
 .site-name {
   font-size: 24px;
-  padding: 0 0 16px;
+  padding: 0 0 10px;
 }
 
 .site-name-style {
@@ -2181,7 +2190,6 @@ input[type=radio] {
 .company-number {
   font-size: 20px;
   font-weight: normal;
-  padding: 10px 0 4px;
   font-weight: bold;
   color: inherit;
 }
@@ -2205,6 +2213,7 @@ input[type=radio] {
 .contacts-info-block p {
   opacity: 0.4;
   line-height: 20px;
+  padding-top:4px;
 }
 
 .left-info-block {
@@ -2240,7 +2249,7 @@ input[type=radio] {
   display: flex;
   width: 100%;
   padding-left: 104px;
-  padding-top: 10px;
+  padding-top: 7px;
   line-height: 19px;
 }
 
@@ -2385,7 +2394,7 @@ input[type=radio] {
 }
 
 .catalog-items-block li:last-child>div:last-child {
-  padding: 8px 0;
+  padding: 11px 0;
 }
 
 .stars-block_3 {
@@ -3348,6 +3357,7 @@ input[type=radio] {
   }
   .first-catalog-block {
     width: 30%;
+    padding:30px 0 0 0;
   }
   .catalog-item-description_6 {
     display: flex;
