@@ -3230,6 +3230,9 @@ input[type=radio] {
   .drop-button-block {
     margin-right: 57px;
   }
+  .yellow-indicator {
+    padding: 0 10px;
+  }
   .select-wrapper {
     right: 12%;
   }
@@ -3490,6 +3493,10 @@ input[type=radio] {
   }
   .search button {
     padding: 16px 20px;
+  }
+  .yellow-indicator {
+    padding: 1px 10px;
+    font-size:12px;
   }
   .second-button {
     margin: 0;
@@ -3853,6 +3860,10 @@ input[type=radio] {
   }
   .second-button {
     margin: 0;
+  }
+  .yellow-indicator {
+    padding: 1px 10px;
+    font-size:12px;
   }
   .first-button a {
     padding: 10px 0;
